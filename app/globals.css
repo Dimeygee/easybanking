@@ -6,28 +6,26 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --grayishblue: 150, 152, 166;
+  --lgrayishblue: 243, 244, 246;
+  --verylGray: 250, 250, 250;
+  --ewhite: 255, 255, 255;
+  --darkblue: 45, 49, 77;
+  --limegreen: 49, 211, 92;
+  --bcyan: 43, 183, 218;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .gradient{
+    background-image: linear-gradient(to right, #31d300, #00d375, #00ceb2, #00c4d4, #2bb7da);
+  }
 }
+
